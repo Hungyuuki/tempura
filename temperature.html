@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<script src="temperature.js"></script>
+<script>
+    student = {
+        id:12,
+        name: "Nguyễn Văn Dúi",
+        address: "Tổ 1 Khu 2 Phường 3 Quận 4 Thành Phố 5",
+        temp: "25 độ C",
+        getinfor (){
+            return "Id= "+ this.id+" name= "+ this.name+" address= "+ this.address+ " nhiệt độ "+this.temp;
+        }
+    }
+    console.log(student.getinfor())
+    document.write("Đối tượng "+student.name+" có nhiệt độ là "+student.temp+" độ C ")
+
+    let roomTemperature = new Temperature(25);
+    document.write(+roomTemperature.toFarenheit()+" độ F "+"<br>"+" hoặc "+roomTemperature.toKenvin()+" độ K")
+
+</script>
+</body>
+</html>
